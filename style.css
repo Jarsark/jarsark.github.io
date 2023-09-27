@@ -1,66 +1,175 @@
-/* Reset de estilos básicos */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    max-width: 700px;
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    padding: 20px; /* Adiciona algum espaço ao redor do conteúdo */
 }
 
 header {
+    background-image: url('https://i.pinimg.com/originals/c9/e8/ef/c9e8efca356e9fd2263493d78ab3737d.gif');
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    margin-bottom: 0px;
+ display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-position: center bottom;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); 
+  border-radius: 20px 20px 0px 0px;
+}
+ 
+.search-bar {
+    display: flex;
+    align-items: center;
 }
 
-header h1 {
-    font-size: 36px;
+.search-bar input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
 }
+ 
+ 
 
-nav ul {
-    list-style: none;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.search-bar button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 section {
-    padding: 40px;
-}
-
-h2 {
-    font-size: 24px;
+    padding: 20px;
+    background: #eee;
     margin-bottom: 20px;
 }
 
-.obra {
-    margin-bottom: 40px;
-}
-
-.obra img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
 footer {
-    text-align: center;
-    padding: 20px 0;
     background-color: #333;
     color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
-/* Estilos adicionais podem ser adicionados conforme necessário */
 
+/* Outros estilos CSS existentes permanecem inalterados */
+
+header img {
+    width: 100px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção original da imagem */
+  background-color: #fff;
+  border-radius: 10px;
+}
+/* Estilize a barra de navegação */
+ /* Estilo base da barra de navegação */
+.menu {
+  border-top: 2px solid #fff;
+  margin: 0px 0px 20px;
+  background-color: #150115;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo da lista não ordenada */
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo dos itens da lista */
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Estilo dos links */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px; /* Adiciona algum espaço ao redor do link */
+  transition: background-color 0.2s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+/* Estilo dos links quando passa o mouse por cima */
+.menu a:hover {
+  text-decoration: none; /* Remove o sublinhado */
+  background-color: #2b022b; /* Mude a cor de fundo ao passar o mouse */
+}
+
+/* Estilo base da barra de navegação */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #fff;
+    margin: 0px 0px 20px;
+    background-color: #150115;
+    padding: 10px 20px; /* Adicione margem interna para espaçamento */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo dos links */
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease;
+}
+
+/* Estilo do switch */
+.menu-switch {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adicione margem à direita do switch para espaçamento */
+}
+
+.menu-switch label {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Largura do botão */
+    height: 20px; /* Altura do botão */
+    background-color: #ccc; /* Cor de fundo quando desligado */
+    border-radius: 20px; /* Cria um botão redondo */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor */
+    cursor: pointer; /* Mude o cursor para parecer um botão clicável */
+}
+
+.menu-switch input[type="checkbox"] {
+    display: none; /* Esconda o checkbox real */
+}
+
+/* Estilo do rótulo quando o switch está ligado */
+.menu-switch input[type="checkbox"]:checked + label {
+    background-color: #2b022b; /* Cor de fundo quando ligado */
+}
+
+/* Estilo do indicador de alternância (botão deslizante) */
+.menu-switch label::after {
+    content: "";
+    position: absolute;
+    width: 18px; /* Largura do botão deslizante */
+    height: 18px; /* Altura do botão deslizante */
+    background-color: #fff; /* Cor do botão deslizante */
+    border-radius: 50%; /* Torna o botão deslizante circular */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de movimento */
+    left: 2px; /* Inicialmente, o botão deslizante está à esquerda */
+    top: 2px;
+}
+
+/* Posição do botão deslizante quando o switch está ligado */
+.menu-switch input[type="checkbox"]:checked + label::after {
+    transform: translateX(20px); /* Move o botão deslizante para a direita quando ligado */
+}
+
+/* Estilo dos links quando passa o mouse por cima */
+.menu a:hover {
+    text-decoration: none;
+    background-color: #2b022b;
+}

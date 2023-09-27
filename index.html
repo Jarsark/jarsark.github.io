@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Seu Nome - Traduções</title>
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
+        <h1>Seu Nome</h1>
         <nav>
             <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Seção 1</h2>
-            <p>Conteúdo da seção 1.</p>
-        </section>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Uma breve descrição sobre você e suas habilidades de tradução.</p>
+    </section>
 
-        <section>
-            <h2>Seção 2</h2>
-            <p>Conteúdo da seção 2.</p>
-        </section>
-    </main>
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="obra">
+            <img src="imagem1.jpg" alt="Título da Obra 1">
+            <h3>Título da Obra 1</h3>
+            <p>Descrição da obra ou informações adicionais.</p>
+        </div>
+        <div class="obra">
+            <img src="imagem2.jpg" alt="Título da Obra 2">
+            <h3>Título da Obra 2</h3>
+            <p>Descrição da obra ou informações adicionais.</p>
+        </div>
+        <!-- Adicione mais obras conforme necessário -->
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo em <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+    </section>
 
     <footer>
-        <p>&copy; 2023 Meu Site</p>
+        <p>&copy; 2023 Seu Nome</p>
     </footer>
 </body>
 </html>
